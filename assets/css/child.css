@@ -1,1 +1,14 @@
 /* Write your styles here */
+
+/* Dark navbar */
+.navbar-default {
+    background-color: #333;
+    border-color: #333;
+}
+
+/* Nav Links */
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
