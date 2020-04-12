@@ -1,4 +1,5 @@
 <?php
+
 //sp-core-style points to the style of the parent theme.
 
 // add_action('wp_enqueue_scripts',function(){
@@ -8,4 +9,7 @@
 // });
 
 //Includes cpt file
-// include('lib/cpt/cpt.php');
+include('lib/cpt/cpt.php');
+
+//Includes taxonomy file
+include('lib/taxonomies/custom-tax.php');
