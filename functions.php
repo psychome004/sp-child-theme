@@ -13,3 +13,6 @@ include('lib/cpt/cpt.php');
 
 //Includes taxonomy file
 include('lib/taxonomies/custom-tax.php');
+
+//Includes custom fields file
+include('lib/custom-fields/cf.php');
