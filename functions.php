@@ -16,3 +16,6 @@ include('lib/taxonomies/custom-tax.php');
 
 //Includes custom fields file
 include('lib/custom-fields/cf.php');
+
+//Includes custom fonts file
+include('lib/custom-fonts/custom-fonts.php');
