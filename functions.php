@@ -22,3 +22,25 @@ include('lib/custom-fonts/custom-fonts.php');
 
 //Includes custom fonts file
 include('lib/custom-headers/custom-header.php');
+
+
+//Excerpt
+function excerpt( $limit ) {
+
+	global $post;
+
+	$excerpt = $post->post_excerpt;
+
+	if( !$excerpt && !strlen( $excerpt ) ){
+
+    $excerpt = $post->post_content;
+		$excerpt = strip_shortcodes( $excerpt );
+		$excerpt = excerpt_remove_blocks( $excerpt );
+		$excerpt = str_replace( ']]>', ']]&gt;', $excerpt );
+
+	}
+
+	$excerpt = wp_trim_words( $excerpt, $limit, '...' );
+
+	return $excerpt;
+}
